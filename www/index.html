@@ -1,19 +1,115 @@
 <!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой первый проект</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
-    <div class="promo">
-        <div class="promo-inner">
-            <h1 class="promo-ttl">Заголовок сайта</h1>
-            <p class="promo-slogan">Описание сайта, типа тут все самое офиггенное и опупенное</p>
-        </div>
-    </div>
 
-    <script src="scripts/script.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой первый проект</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-wrap">
+        <a href="index.html" class="main-logo">Butterfly</a>
+        <nav class="menu j-menu">
+          <ul>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+        <button style="background-image: url('photos/burger-icon.svg');" class="burger j-burger">menu</button>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <setion class="promo" style="background-image:url('photos/promo-photo.jpg');" >
+      <div class="promo-inner">
+        <div class="promo-wrap">
+
+          <h1 class="promo-title">Индивидуальный пошив галсутков-бабочек</h1>
+          <a href="#" class="btn">Заказать бабочку</a>
+        </div>
+      </div>
+    </setion>
+    <setion class="orders">
+      <div class="orders-inner">
+        <div class="orders-title">
+          <h2 class="orders-title">Наши работы</h2>
+        </div>
+        <div class="orders-wrap">
+
+          <div class="example-butterfly">
+            <img src="photos/butterfly-1(1).png" class="butterfly-pic" alt="Бабочка такая">
+            <p class="butterfly-text">Бабочка такая</p>
+          </div>
+          <div class="example-butterfly">
+
+            <img src="photos/butterfly-2.png" class="butterfly-pic" alt="бабочка растакая">
+            <p class="butterfly-text">Бабочка растакая</p>
+          </div>
+          <div class="example-butterfly">
+            <img src="photos/butterfly-3.png" class="butterfly-pic" alt="Бабочка сякая">
+            <p class="butterfly-text">Бабочка сякая</p>
+          </div>
+          <div class="example-butterfly">
+            <img src="photos/butterfly-4.png" class="butterfly-pic" alt="Кривая">
+            <p class="butterfly-text">Кривая</p>
+          </div>
+        </div>
+        <a href="#" class="btn ">Все бабочки</a>
+      </div>
+
+    </setion>
+    <section class="indent">
+      <div class="indent-inner">
+        <h3 class="indent-title"> Закажи пошив</h3>
+        <p class="indent-text">
+          Заполните форму - наш мастер свяжется с вами, согласует удобное время для встречи. На встрече он снимет мерки и поможет обределиться с тканью.
+        </p>
+        <form action="#" class="form">
+          <div class="form-field ">
+            <label for="name" class="form-label">Имя</label>
+            <input id="name" name="name" type="text" class="form-input">
+          </div>
+          <div class="form-field ">
+            <label for="phone" class="form-label ">Телефон</label>
+            <input id="phone" name="phone" type="tel" class="form-input">
+          </div>
+
+            <button class="btn btn-indent" type="submit">Отправить</button>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="index.html" class="main-logo">Butterfly</a>
+      <a href="tel:+78128008080" class="footer-phone">+7 812 800-80-80 </a>
+
+      <ul class="social">
+        <li class="social-item">
+          <a href="#" class="social-link social-link-insta" title="Мы в Instagramm"></a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link social-link-fb" title="Мы в Facebook"></a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link social-link-telega" title="Читай нас в телеге"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+  <script src="scripts/jquery-3.6.0.min.js"></script>
+
 </body>
+
 </html>

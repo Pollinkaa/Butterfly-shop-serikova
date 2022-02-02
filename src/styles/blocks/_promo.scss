@@ -1,27 +1,32 @@
-.promo {
-  padding: 50px 0;
-  background-color: lightsteelblue;
+
+
+
+.promo-title {
+  @include title;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  line-height: 98px;
+  color: $main-color;
+  text-align: center;
+  @media (max-width:1279px) {
+    font-size: 54px;
+    line-height: 74px;
+    margin-top: 180px;
+  }
+  @media (max-width:767px) {
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 110px;
+    margin-bottom: 80px;
+  }
 }
+
+.promo-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 .promo-inner {
-  margin: 0 auto;
-  width: 1024px;
-
-  @media (max-width: 1279px) {
-    width: auto;
-    max-width: 1024px;
-  }
-}
-
-.promo-ttl {
-  font-size: $h1-fz-desktop;
-  font-weight: $h1-fw;
-
-  @media (max-width: 1279px) {
-    font-size: $h1-fz-tablet;
-  }
-
-  @media (max-width: 669px) {
-    font-size: $h1-fz-mobile;
-  }
+ @include container;
 }
